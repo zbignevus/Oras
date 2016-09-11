@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div id="banner" class="page-header">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>
+            Weather App
+          </h1>
+          <small>
+           Get to know the weather
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!--- SEARCH BAR -->
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-xs-10 less-padding">
+              <input type="search" name="weather" placeholder="Search for your location" class="form-control" ng-model="vm.message"/>
+          </div>
+          <div class="col-xs-2 less-padding">
+              <button type="button" ng-click="vm.onSubmit(vm.message)" class="btn btn-default btn-md">Search<span class="sr-only">Search</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br/>
+  <!-- A ROW CONSISTING OF 2 COLUMNS EACH WITH NESTED ROWS (FOR BEST SPACING) -->
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-6">
+      <div class="row">
+        <div class="col-xs-6">
+          <!-- CITY NAME AND REGION DEAIL -->
+          <h2>{{vm.location.city.name}}</h2>
+          <small>{{vm.location.city.name}}<span ng-show="vm.location">,</span> {{vm.location.city.country}}</small>
+        </div>
+        <div class="col-xs-6">
+          <!-- TEMPERATURE -->
+          <h2><temp-display temp="vm.location.list[0].main.temp"></temp-display></h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="row">
+        <div class="col-xs-6">
+          <!--WEATHER ICON DISPLAY -->
+            <weather-display weather="vm.location.list[0].weather[0].main"><weather-display>
+        </div>
+        <div class="col-xs-6">
+          <!-- WEATHER DESCRIPTION -->
+          <h2>{{vm.location.list[0].weather[0].description}}</h2>
+          {{vm.location.list[0].main.humidity}}&nbsp;<span ng-show="vm.location">% humidity</span>
+        </div>
+      </div>
+    </div>
+  </div>

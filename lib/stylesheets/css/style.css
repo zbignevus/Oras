@@ -1,0 +1,11 @@
+#filter {
+  margin-left: 4px;
+  margin-bottom: 8px;
+}
+.less-padding {
+  padding: 0 2px;
+}
+.weather-icon {
+  font-size:48px;
+  margin-top:25px;
+}

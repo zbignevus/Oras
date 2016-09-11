@@ -1,0 +1,38 @@
+{
+  "city":
+    {
+      "id":593116,
+      "name":"Vilnius",
+      "coord":{"lon":25.2798,"lat":54.689159},
+      "country":"LT",
+      "population":0,
+      "sys":{"population":0}
+    },
+  "cod":"200",
+  "message":0.0296,
+  "cnt":40,
+  "list":[
+    {
+    "dt":1472774400,
+    "main":
+      {
+        "temp":285.3,
+        "temp_min":285.3,
+        "temp_max":286.056,
+        "pressure":1010.04,
+        "sea_level":1029.79,
+        "grnd_level":1010.04,
+        "humidity":90,
+        "temp_kf":-0.75
+      },
+    "weather":[
+      {
+        "id":800,
+        "main":"Clear",
+        "description":"clear sky",
+        "icon":"01n"
+      }],
+    "clouds":{"all":0},
+    "wind":{"speed":1.91,"deg":182.501},
+    "rain":{},
+    "sys":{"pod":"n"},"dt_txt":"2016-09-02 00:00:00"},{"dt":1472785200,"main":{"temp":285.8,"temp_min":285.8,"temp_max":286.515,"pressure":1009.43,"sea_level":1029.33,"grnd_level":1009.43,"humidity":88,"temp_kf":-0.71},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"02n"}],"clouds":{"all":8},"wind":{"speed":3.94,"deg":223.503},"rain":{},"sys":{"pod":"n"},"dt_txt":"2016-09-02 03:00:00"}
