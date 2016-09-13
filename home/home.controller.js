@@ -8,13 +8,13 @@
     var vm = this;
     vm.location = "";
     vm.onSubmit = function(cityName){
-      weatherData
+        weatherData
         .getByCity(cityName)
-        .success(function(data){
-          vm.location = data;
-        })
-        .error(function(e){
-          console.log(e);
+        .then(function(response){
+          vm.location = response.data;
+        },
+          function(response){
+          console.log(response.e);
         });
     };
 
