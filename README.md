@@ -1,4 +1,4 @@
-# weatherapp
+# Oras
 
 
 This is a simple responsive weather application that dislays the weather for the location entered in it's search terms.
