@@ -10,5 +10,5 @@ This is a simple responsive weather application that dislays the weather for the
 
 ## Installation:
 1. Clone the repository
-2. Run on a simple web server
+2. Run on a web server
 3. Enjoy
